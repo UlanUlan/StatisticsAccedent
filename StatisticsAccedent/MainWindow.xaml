@@ -1,0 +1,25 @@
+﻿<Window x:Class="StatisticsAccedent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StatisticsAccedent"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu x:Name="Menu" Grid.Row="0">
+            <MenuItem Name="Panel" Header="Панель"/>
+            <MenuItem Name="Sost" Header="Состояние"/>
+            <MenuItem Name="Stat" Header="Статистика" Click="Stat_Click"/>
+            <MenuItem Name="Setting" Header="Настройки"/>
+        </Menu>
+
+        <Frame Grid.Row="1" Name="CenterFrame"/>
+        
+    </Grid>
+</Window>
